@@ -8,7 +8,7 @@ dotenv.config()
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"RAN-ONLINE-EP7",
+  base:"/RAN-ONLINE-EP7",
   server: {
     port: Number(process.env.PORT)
     // , host: true,//expose network
