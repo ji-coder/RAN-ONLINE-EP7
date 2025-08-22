@@ -3,7 +3,7 @@ import {
     FaUser,
 } from "react-icons/fa";
 
-import news1 from "../assets/images/newsevents/news.jpg";
+import news1 from "../assets/images/logo/AMIA-LOGO.png";
 
 
 export const NewsEventsData = [
@@ -46,6 +46,14 @@ export const NewsEventsData = [
         date: "Nov 15, 2024",
         icon_user: FaUser,
         title: "BETA TESTING PERIOD",
+        content: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        backgroundImage: news1,
+    },
+     {
+        icon_calendar: FaCalendar,
+        date: "Nov 15, 2024",
+        icon_user: FaUser,
+        title: "WAR SCHEDULE",
         content: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         backgroundImage: news1,
     },

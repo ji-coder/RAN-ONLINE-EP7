@@ -1,9 +1,22 @@
 import React from "react";
+import bgImage from "../assets/images/logo/AmiaBG.png"; // ✅ adjust path to your image
 
 function OurServicesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 flex justify-center items-start p-6 mt-20">
-      <div className="max-w-3xl w-full bg-white bg-opacity-20 rounded-2xl shadow-lg p-8 space-y-8">
+    <div className="relative min-h-screen flex justify-center items-start p-6 mt-20 overflow-hidden">
+      {/* ✅ Background */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "100% 100%", // 🔥 fills full screen without crop
+        }}
+      ></div>
+
+      {/* ✅ Content (kept above background) */}
+      <div className="relative z-10 max-w-3xl w-full bg-white/20 rounded-2xl shadow-lg p-8 space-y-8">
         {/* Header */}
         <div className="text-center">
           <h1 className="text-2xl font-bold text-yellow-400">Ran Online : Amia EP7</h1>

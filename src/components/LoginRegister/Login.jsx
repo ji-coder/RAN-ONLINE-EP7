@@ -1,14 +1,21 @@
 import { useState } from "react";
-import bgImage from "../../assets/images/BackGround/bg.png";
+import bgImage from "../../assets/images/logo/AmiaBG.png";
 
 export default function Login() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-     <div
-        className="flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat p-4"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      >
+     <div className="relative flex items-center justify-center min-h-screen p-4 overflow-hidden">
+      {/* ✅ Fullscreen Background */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "100% 100%", // 🔥 fills without crop
+        }}
+      ></div>
       <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-8 bg-opacity-80 backdrop-blur-sm mt-20">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
           {isLogin ? "Login" : "Register"}
