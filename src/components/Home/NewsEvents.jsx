@@ -13,7 +13,7 @@ const News = () => {
     };
 
     return (
-         <div className="w-full bg-gradient-to-br from-gray-900 via-black to-gray-800 flex flex-col items-center mt-2 mb-2">
+         <div className="w-full bg-gradient-to-br from-gray-900 via-black to-gray-800 flex flex-col items-center mt-2 ">
             <h1 className="text-yellow-400 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-bold mb-6 mt-6">
                 NEWS & EVENTS
             </h1>

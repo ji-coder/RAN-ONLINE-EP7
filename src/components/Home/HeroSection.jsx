@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import cover01 from '../../assets/images/cover/COVER-PHOTO.png';
 import cover1 from '../../assets/images/cover/cover1.jpg';
 import cover2 from '../../assets/images/cover/cover2.jpg';
 import cover3 from '../../assets/images/cover/cover3.jpg';
@@ -7,7 +8,7 @@ const Home = () => {
   const slides = [
     {
       id: 1,
-      image: cover1,
+      image: cover01,
     },
     {
       id: 2,

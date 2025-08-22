@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import pic from "../../../assets/images/logo/logo.avif";
+import pic from "../../../assets/images/logo/LOGO-PNG.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -35,15 +35,19 @@ function Navbar() {
         {/* Logo Section */}
         <div className="flex items-center space-x-3">
           <Link to="/" onClick={handleHomeClick} className="flex items-center space-x-2">
-            <img src={pic} alt="Logo" className="h-12 w-12 rounded-full" />
-            <div>
-              <h1 className="text-xl font-semibold">
-                <span className="text-black">RAN ONLINE </span>
-              </h1>
-              <h1 className="text-sm font-semibold"> 
-                <span className="text-black">AMIA EP7</span>
-              </h1>
-            </div>
+            <img src={pic} alt="Logo" className="h-12 w-12 rounded-full bg-gray-800" />
+            <div className="text-center">
+  <h1 className="text-xl font-semibold">
+    <span className="text-black">RAN ONLINE</span>
+  </h1>
+  <h1 className="text-sm font-semibold flex items-center justify-center gap-2 mt-1">
+    <span className="text-gray-600">←</span>
+    <span className="text-red-800 tracking-widest">AMIA EP7</span>
+    <span className="text-gray-600">→</span>
+  </h1>
+</div>
+
+
           </Link>
         </div>
 
@@ -56,21 +60,21 @@ function Navbar() {
               handleHomeClick();
             }}
             className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
           >
             Home
           </Link>
           <Link
             to="/news&events"
             className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
           >
             News & Events
           </Link>
           <Link
             to="/server-info"
             className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
           >
            Server Info
           </Link>
@@ -78,7 +82,7 @@ function Navbar() {
           <Link
             to="/rankings"
             className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+             hover:border-red-700 hover:text-red-700"
           >
            Rankings
           </Link>
@@ -86,7 +90,7 @@ function Navbar() {
           <Link
             to="/top-up"
             className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
           >
            Top-Up
           </Link>
@@ -94,7 +98,7 @@ function Navbar() {
           <Link
              to="/downloads"
             className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
           >
            Downloads
           </Link>
@@ -129,31 +133,31 @@ function Navbar() {
                 setMenu(false);
               }}
               className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+             hover:border-red-700 hover:text-red-700"
             >
               Home
             </Link>
             <Link
               to="/news&events"
               className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
               onClick={() => setMenu(false)}
             >
               News & Events
             </Link>
             <Link
-              to="/"
+              to="/server-info"
               className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
               onClick={() => setMenu(false)}
             >
               Server Info
             </Link>
 
                <Link
-              to="/"
+              to="/rankings"
               className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
               onClick={() => setMenu(false)}
             >
               Rankings
@@ -162,16 +166,16 @@ function Navbar() {
              <Link
               to="/top-up"
               className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
               onClick={() => setMenu(false)}
             >
               Top-Up
             </Link>
 
             <Link
-              to="/Download-Links"
+              to="/downloads"
               className="text-gray-700 border-b-2 border-transparent 
-              hover:border-green-500 hover:text-green-500"
+              hover:border-red-700 hover:text-red-700"
               onClick={() => setMenu(false)}
             >
               Downloads

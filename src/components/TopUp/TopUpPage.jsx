@@ -76,7 +76,7 @@ export default function TopUpPage() {
       <div className="text-center max-w-3xl mb-10">
         <p>
           After donate, Pls submit the screenshot of the receipt to our
-          <a href="#" className="text-blue-400 underline ml-1">Facebook Messenger.</a>
+          <a href="https://www.facebook.com/RanOnlineAmiaEP7" className="text-blue-400 underline ml-1">Facebook Messenger.</a>
         </p>
         <p className="text-green-400 mt-2">
           Pls contact us if you want to top up using other method.

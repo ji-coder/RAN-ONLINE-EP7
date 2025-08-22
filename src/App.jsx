@@ -2,7 +2,7 @@ import RootLayout from "./shared/components/Layouts/RootLayout";
 import { Route, Routes } from 'react-router-dom';
 import HomePage from "./pages/HomePage";
 
-import NewsEventsPage from "./pages/NewsEventsPage";
+import NewsEventsPage from "./components/NewsEvents/NewsEventsPage";
 import NotFound from "./pages/NotFoundPage";
 import OurServicesPage from "./pages/OurServicesPage";
 

@@ -6,7 +6,7 @@ const ChatyWidget = () => {
 
     const handleChatButtonClick = () => {
         // Open the Messenger chat link directly
-        window.open("", "_blank");
+        window.open("https://www.facebook.com/RanOnlineAmiaEP7", "_blank");
 
         // Close the hover tooltip when the button is clicked
         setIsHovered(false);
@@ -16,12 +16,12 @@ const ChatyWidget = () => {
         <div className="relative">
             {/* Chaty Button */}
             <div
-                className="fixed bottom-6 right-6 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition-transform"
+                className="fixed bottom-6 right-6 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 transition-transform"
                 onClick={handleChatButtonClick} // Directly open Messenger on click and close the hover
                 onMouseEnter={() => setIsHovered(true)} // Show tooltip on hover
                 onMouseLeave={() => setIsHovered(false)} // Hide tooltip when mouse leaves
             >
-                <FaFacebookMessenger className="w-8 h-8 text-white" />
+                <FaFacebookMessenger className="w-5 h-5 text-white" />
             </div>
 
             {/* Modal with Hover Text and Left Arrow */}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import coverpic from "../../../assets/images/logo/mcdghheader.png";
+import coverpic from "../../../assets/images/logo/LOGO-PNG.png";
 import { FaRankingStar } from "react-icons/fa6";
 import { LuCircleDollarSign } from "react-icons/lu";
 import {
@@ -60,19 +60,16 @@ const Footer = () => {
 
   return (
     <div className="relative">
-      <div className="bg-gray-600 text-white  mt-8 md:mt-0">
-         <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
-           <div className="w-full md:w-1/3 flex flex-col items-start">
-            <img
-              // src={coverpic}
-              alt="Ran Online Logo"
-              className="pb-4 w-[300px] h-[90px]"
-            />
-            <div className="flex flex-col space-y-0 font-monotype text-lg italic font-normal text-black">
-              {/* <p>"Excellence in service, Leader in health care"</p>
-              <p>We serve humanity to glorify God.</p> */}
-            </div>
-          </div>
+      <div className="bg-gray-600 text-white  ">
+       <div className="flex flex-col md:flex-row justify-between items-start p-8 md:px-32 px-5">
+<div className="w-full md:w-1/3 flex flex-col items-center md:items-start justify-start mb-6 md:mb-0">
+  <img
+    src={coverpic}
+    alt="Ran Online Logo"
+    className="max-w-[250px]  h-auto object-contain"
+  />
+</div>
+
 
           <div className="text-black">
             <h1 className="font-medium text-xl pb-4 pt-5 md:pt-0 text-yellow-400">Quick Links</h1>
@@ -129,21 +126,35 @@ const Footer = () => {
             <h1 className="font-medium text-xl pb-4 pt-5 md:pt-0 text-yellow-400">Follow Us</h1>
             <nav className="flex flex-col gap-2">
               <a
-                href=""
+                href="https://www.facebook.com/RanOnlineAmiaEP7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group"
               >
                 <FaFacebookSquare className="mr-2 text-blue-600 group-hover:text-white transition duration-300" />
                 <span className="text-sm text-black group-hover:text-white transition duration-300">
-                  Facebook
+                  Facebook Page
                 </span>
               </a>
+
+              <a
+                href="https://www.facebook.com/groups/1237488830026810"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center group"
+              >
+                <FaFacebookSquare className="mr-2 text-blue-600 group-hover:text-white transition duration-300" />
+                <span className="text-sm text-black group-hover:text-white transition duration-300">
+                  Facebook Group
+                </span>
+              </a>
+
             </nav>
+            
           </div>
         </div> 
 
-        <div className="mt-4 pt-4 flex justify-center ">
+        <div className="flex justify-center ">
           <div className="border-t border-gray-700 w-3/4 mb-5">
             <p className="text-center text-sm mt-5">
               ©2025 <span className="text-black">RAN ONLINE AMIA EP7</span>. All rights reserved.
